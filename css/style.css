@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/****************************** Produto ******************************/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caixa{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+nav a:hover{
+    font-size: 23px;
+    color: #c78c19;
+    transition: 1s all;
+    
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.produtos li:hover{
+    border-color: #c78c19;
+}
+.produtos li:active{
+    border-color: #088c19;
+}
+.produtos li:hover h2{
+    font-size: 32px;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-preço{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.produto-desc{
+    font-size: 18px;
+}
+footer{
+    text-align: center;
+    background: url("../img/bg.jpg");
+    padding: 40px 0;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/****************************** Contato ******************************/
+
+form{
+    margin: 50px 50px;
+}
+form label, form legend{
+    display: block;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+form #motivo-contato{
+    font-weight: normal;
+}
+form input{
+    display: inline-block;
+    margin: 0 auto;
+}
+.input-padrao{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    width: 30%;
+}
+ .checkbox{
+    margin: 20px 10px;
+}
+#mensagem{
+    margin: 5px auto 15px auto;
+    display: block;
+}
+#horario{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding: 5px;
+}
+.enviar{
+    width: 20%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /* Transição de 1seg para todos os elementos*/
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+.enviar:hover{
+background: darkorange;
+transform: scale(1.2); /*Aumenta os itens de acordo com o valor na escala */
+}
+table{
+    margin: 10px auto 20px auto;
+}
+thead{
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 15px 15px;
+    width: 80%;
+}
+
+/*Css da pagina inicial */ 
+.banner{ 
+width: 100%;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    
+}
+.principal{
+    padding: 3em 0;
+    background-color: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+   
+
+}
+.mapa p{
+    margin: 0 0 2em;
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.beneficios{
+    padding: 3em 0;
+    background-color: #888888;
+
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens{
+    line-height: 1.5em;
+}
+.itens::before{
+    content: "★";
+}
+.itens:first-child{ /*pegando primeiro item da UL com o first:child*/
+    font-weight: bold;
+}
+.imagem-beneficios{
+    width: 60%;   
+    opacity: 1.0;
+    transition: 400ms; 
+    box-shadow:  10px 10px 10px 0 #000000;
+}
+.imagem-beneficios:hover{  
+    opacity: 0.3;
+ 
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+/* Responsivo mobilie  */
+
+@media screen and (max-width: 480px){
+    /* INDEX */
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static
+    }
+    nav ul {
+        text-align: center;
+    }
+
+
+    /*PRODUTOS*/
+    .produtos{
+        width: 100%;
+    }
+    .produtos li{
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+        
+    }
+    .produtos li img{
+        width: 100%;
+    }
+    /* CONTATO */ 
+    .input-padrao, .enviar {
+        margin: 0 auto;
+    }
+    footer{
+        width: 100%;
+    }
+    form label, legend{
+        text-align: center;
+    }
+    select{
+        margin: 0 auto;
+        display: block;
+    }
+    .enviar{
+        display: block;
+    }
+    textarea{
+        width: 80%;
+        box-sizing: border-box;
+        margin: 0 auto 15px  auto;
+        display: block;
+    }
+    table{
+        margin: 0 auto 25px auto;
+    }
+}
